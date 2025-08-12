@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthGuardian AI - Free Medical Report Analysis</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 40px; }
+        .header { background: #f0f7ff; padding: 20px; }
+        button { background: #2563eb; color: white; padding: 15px 30px; border: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🩺 HealthGuardian AI</h1>
+        <p>Free AI-powered medical report analysis</p>
+    </div>
+    
+    <div style="margin: 40px 0;">
+        <h2>Upload Medical Report</h2>
+        <input type="file" id="reportUpload">
+        <button onclick="analyzeReport()">ANALYZE NOW</button>
+    </div>
+    
+    <div id="result" style="padding: 20px; background: #f9f9f9;"></div>
+    
+    <script>
+    function analyzeReport() {
+        document.getElementById("result").innerHTML = 
+            "<h3>🔬 Analysis in progress...</h3>" + 
+            "<p>Our AI is scanning your report (powered by DeepSeek-R1)</p>";
+    }
+    </script>
+</body>
+</html>
